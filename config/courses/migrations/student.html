@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <title>{{ student.name }}</title>
+</head>
+<body>
+<div class="container mt-4">
+    <h1>{{ student.name }}</h1>
+    <p>Email: {{ student.email }}</p>
+    <p>Kurs: {{ student.course.title }}</p>
+    <p>Ro'yxatdan o'tgan vaqti: {{ student.enrolled_at }}</p>
+</div>
+</body>
+</html>
